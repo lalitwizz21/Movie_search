@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+/* Search Component */
+.form-outline {
+  width: 100%;
+  background: linear-gradient(blue, violet);
+  padding: 6% 5%;
+  margin: 12px auto 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.search {
+  width: 80%;
+  border-radius: 18px;
+  margin: 20px auto;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+/* Movie Component */
+.movie-card {
+  overflow: hidden;
+  margin: 12px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(rgb(218, 213, 213), rgba(168, 176, 211, 0.561));
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  box-shadow: 1px 1px 4px 0px black;
+  transition: 0.15s all linear;
+}
+
+.movie-card:hover {
+  box-shadow: 2px 2px 10px 0px black;
+  transform: translateX(10px);
+}
+
+.movie-img {
+  overflow: hidden;
+  width: 18%;
+  cursor: pointer;
+}
+
+.movie-img img {
+  width: 100%;
+  height: 100%;
+  filter: invert(0.2);
+  transition: 0.3s all linear;
+}
+
+.movie-img img:hover {
+  transform: scale(1.1, 1.1);
+  filter: invert(0);
+}
+
+.movie-info {
+  width: 82%;
+  padding: 5px 8px 5px 10px;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 6px;
+  font-size: 14.5px;
+}
+
+.extra-details {
+  margin: 8px auto;
+  display: flex;
+}
+
+.extra-details span {
+  width: 50%;
+}
+
+/* For Tablet */
+@media (max-width: 1280px) {
+  .movie-img {
+    width: 30%;
+  }
+
+  .movie-info {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+/* For Mobile */
+@media (max-width: 590px) {
+  .movie-img {
+    width: 100%;
+  }
+
+  .movie-info {
+    width: 100%;
+    padding: 20px;
+  }
+}
