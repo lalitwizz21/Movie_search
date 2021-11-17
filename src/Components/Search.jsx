@@ -110,7 +110,7 @@ export default class Searchbar extends Component {
             })}
           </>
         ) : (
-          <div className="mt-5 bg-danger">
+          <div className="mt-5">
             <h3 className="text-center ">{this.state.error}</h3>
           </div>
         )}
